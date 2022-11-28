@@ -4,7 +4,7 @@ import { Presentation } from '../layout/Presentation';
 
 export default function Page() {
   return (
-    <div className='w-full h-full min-h-screen bg-[#1f2028]'>
+    <div className='flex flex-col w-screen h-full min-h-screen bg-[#1f2028]'>
       <Header />
       <Home />
       <Presentation />
