@@ -6,5 +6,5 @@ type H1Props = {
 }
 
 export const H1 = ({ text, extraStyles }: H1Props) => {
-  return <h1 className={classNames('font-medium text-2xl text-zinc-800', extraStyles)}>{ text }</h1>
+  return <h1 className={classNames('font-normal text-2xl', extraStyles)}>{ text }</h1>
 }
