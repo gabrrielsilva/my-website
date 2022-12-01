@@ -1,6 +1,5 @@
 import { Brand } from '../components/Brand'
 import { H1 } from '../components/H1'
-import { HeaderButtons } from './HeaderButtons'
 
 export const Header = () => {
   return (
@@ -9,9 +8,9 @@ export const Header = () => {
         <Brand />
         <H1 text='gabriel silva' extraStyles='tracking-tight text-white whitespace-nowrap' />
       </section>
-      <section className='absolute top-0 right-0'>
+      {/* <section className='absolute top-0 right-0'>
         <HeaderButtons />
-      </section>
+      </section> */}
     </header>
   )
 }

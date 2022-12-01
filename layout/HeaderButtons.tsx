@@ -23,10 +23,10 @@ export const HeaderButtons = () => {
   const router = useRouter();
 
   return (
-    <div className='flex flex-col gap-2 p-1 bg-white rounded-sm'>
+    <div className='flex gap-3 p-1 rounded-sm'>
       {myNetworks.map(network => (
         <div key={network.name}>
-          <button className='relative w-8 h-8 p-2' onClick={() => router.push(network.link)}>
+          <button className='relative w-[3vh] h-[3vh] p-2' onClick={() => router.push(network.link)}>
             <Image src={network.image} alt={network.name} fill />
           </button>
         </div>
