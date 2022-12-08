@@ -60,7 +60,7 @@ const technologies = [
 
 export const Presentation = () => {
   return (
-    <div className='w-full h-screen'>
+    <main className='w-full h-screen bg-inherit'>
       <section className='flex flex-col gap-3 p-6 bg-white h-1/2'>
         <Strong text='Quem sou?' extraStyles='text-zinc-700 uppercase' />
         <p className='text-[1.9vh] font-inter text-justify'>Sou Gabriel Silva, desenvolvedor de software desde outubro de 2021, um sitiante que resolve problemas com tecnologia. Gosto de automatizar tarefas e idealizar soluções, sou fullstack, ou seja, desenvolvo aplicações desde o servidor até o cliente.</p>
@@ -76,25 +76,16 @@ export const Presentation = () => {
           </figure>
         </div>
       </section>
-      <section className='flex w-screen bg-blue-700 h-14'>
+      <section className='flex w-screen h-12 bg-[#121212] border-b-4 border-b-white'>
         {technologies.map(technology => (
           <figure key={technology.name} className='relative w-full h-full'>
             <Image src={technology.logoPath} alt={technology.name} quality={100} fill />
           </figure>
         ))}
       </section>
-      {/* <section className='w-screen p-4 h-1/2'>
-        <div className='flex flex-wrap w-full gap-3 h-max'>
-          {technologies.map(technology => (
-            <div key={technology.name} className='flex items-center gap-1 px-2 py-1 rounded-xl bg-white/10'>
-              <figure className='relative w-[3.2vh] h-[3.2vh]'>
-                <Image src={technology.logoPath} alt={technology.name} quality={100} fill />
-              </figure>
-              <figcaption className='text-[1.9vh] text-white font-inter'>{technology.name}</figcaption>
-            </div>
-          ))}
-        </div>
-      </section> */}
-    </div>
+      <section className='w-screen h-screen px-6 py-14 bg-inherit'>
+        <Strong text='Projetos' extraStyles='text-white uppercase' />
+      </section>
+    </main>
   );
 };

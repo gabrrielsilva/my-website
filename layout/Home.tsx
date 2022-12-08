@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div className='relative flex flex-col justify-center w-full h-screen px-6 overflow-hidden'>
       <section className='flex flex-col justify-center w-full h-full gap-6 -mt-40'>
-        <Strong text='Desenvolvo soluções de software para seu negócio' extraStyles='text-zinc-200' />
+        <Strong text='Desenvolvo soluções de software para seu negócio' extraStyles='text-gray-100 mr-10' />
         <Button
           text='Ver projetos'
           Icon={CodeBracketIcon}
